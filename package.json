@@ -1,0 +1,37 @@
+{
+  "name": "coworking-xp",
+  "version": "1.0.0",
+  "description": "Backend de reservas de coworking desarrollado con practicas de Extreme Programming (XP) y BDD con Cucumber",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src tests --ext .ts",
+    "test:unit": "jest",
+    "test:e2e": "cucumber-js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/chai": "^4.3.16",
+    "chai": "^4.4.1",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
