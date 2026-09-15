@@ -55,6 +55,8 @@ node dist/index.js
 ```bash
 npm run test:e2e
 ```
+<img width="550" height="188" alt="scenarios" src="https://github.com/user-attachments/assets/724828a2-de15-48b9-9b4f-b707a29ba654" />
+
 Esto corre los 7 archivos `.feature` de `features/` contra la API real (usando `supertest`,
 sin necesidad de levantar el servidor manualmente).
 
@@ -65,6 +67,8 @@ npm run build    # Compila TypeScript en modo estricto (falla si hay errores de 
 ```
 
 ## Endpoints principales
+<img width="496" height="329" alt="api-endpoints-funcionando" src="https://github.com/user-attachments/assets/57a9f2ee-caed-4a4c-85c2-e8b4167db0e2" />
+
 | Método | Ruta                         | Descripción                              |
 |--------|------------------------------|-------------------------------------------|
 | POST   | `/auth/register`             | Registra un usuario (contraseña con bcrypt) |
@@ -90,3 +94,8 @@ test(reserva): agrega escenario de reserva exitosa (RED)
 feat(reserva): implementa lógica mínima de reserva (GREEN)
 refactor(reserva): extrae validación de disponibilidad a servicio
 ```
+## Integración Continua
+<img width="1340" height="636" alt="pipeline-ci-github-actions" src="https://github.com/user-attachments/assets/e005288c-b53c-40f2-b5cf-102b0296de91" />
+
+El pipeline definido en `.github/workflows/main.yml` corre automáticamente en cada push,
+ejecutando instalación de dependencias, lint, compilación TypeScript y la suite de BDD.
