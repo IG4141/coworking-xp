@@ -1,3 +1,4 @@
+Ivo Giuliano Cappetto
 # Coworking XP — Backend de Reservas con prácticas de Extreme Programming
 
 Backend en TypeScript para la gestión de reservas de un espacio de coworking, desarrollado
